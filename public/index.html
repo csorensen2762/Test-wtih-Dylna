@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Dive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #ccc;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #333333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            resize: vertical;
+            min-height: 200px;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .score-labels {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Essay Dive</h1>
+        <form id="essayForm">
+            <div class="form-group">
+                <label for="essay">Essay</label>
+                <textarea id="essay" name="essay" placeholder="Write your essay here..." required></textarea>
+            </div>
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+        <div class="score-labels">
+            <p>Writing Score: </p>
+            <p>Creativity Score: </p>
+            <p>Mechanics: </p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
