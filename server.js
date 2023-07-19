@@ -14,7 +14,7 @@ const port = 3000;
 app.use(express.static('public'));
 app.use(express.json());
 
-app.post('/prompt', async (req, res) => {
+app.post('/api/prompt', async (req, res) => {
     const input = req.body.input
     console.log("starting request")
     const response = await openai.createChatCompletion({
